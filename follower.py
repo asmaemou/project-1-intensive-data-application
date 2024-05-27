@@ -3,8 +3,8 @@ import os
 
 DB_USERNAME = 'asmaemouradi'
 DB_PASSWORD = 'password'
-DB_NAME = 'database follower'
-DB_HOST = '10.126.16.74'
+DB_NAME = 'follower'
+DB_HOST = 'localhost'
 DB_PORT = '5432'
 
 def restore_database(data):
@@ -33,5 +33,5 @@ def follower(server_ip):
             break
 
 if __name__ == "__main__":
-    server_ip = '10.126.16.74'  # Replace with the actual IP address of the server
+    server_ip = '10.121.26.23'  # Replace with the actual IP address of the server
     follower(server_ip)
